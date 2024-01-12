@@ -5,6 +5,9 @@ mod same_dir;
 pub mod dir1;
 use crate::dir1::dir1_file1;
 
+pub mod dir2;
+use crate::dir2::dir2_hashmap;
+
 fn main() {
     println!("this is main!");
 
@@ -18,6 +21,9 @@ fn main() {
 
     //diffrent directory
     dir1_file1::method();
+
+    //hashmap
+    dir2_hashmap::iterator_method();
 
 }
 
