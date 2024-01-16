@@ -8,6 +8,12 @@ use crate::dir1::dir1_file1;
 pub mod dir2;
 use crate::dir2::dir2_hashmap;
 
+pub mod mem_man;
+use crate::mem_man::mm_macro;
+
+pub mod trait_practise;
+use crate::trait_practise::tp;
+
 fn main() {
     println!("this is main!");
 
@@ -24,6 +30,17 @@ fn main() {
 
     //hashmap
     dir2_hashmap::iterator_method();
+
+    //memory manage
+    println!("----------memory manage start--------");
+    mm_macro::method();
+
+    mm_macro::method2();
+    println!("----------memory manage end----------");
+
+    println!("----------trait practise start--------");
+    tp::method();
+    println!("----------trait practise end--------");
 
 }
 
